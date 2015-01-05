@@ -89,13 +89,14 @@ return array(
 				*/
 			),
 		),
-	),
-    
-        'booster'=>array(
+                'booster'=>array(
                     'class'=>'ext.booster.components.Booster',
                     //'class'=>'path.alias.to.booster.components.Booster',
                     'responsiveCss'=>true
                 ),
+	),
+    
+        
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
