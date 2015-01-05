@@ -1,1 +1,63 @@
 2015/01/05 01:20:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gallos_track.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2015/01/05 03:50:30 [error] [exception.CException] exception 'CException' with message 'Rooster y sus behaviors no tienen un método o closure llamado "getTypeOptions".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getTypeOptions', Array)
+#1 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\_form.php(95): CActiveRecord->__call('getTypeOptions', Array)
+#2 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\_form.php(95): Rooster->getTypeOptions()
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#6 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\create.php(15): CController->renderPartial('_form', Array)
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#8 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\xampp\htdocs\GallosTrack1\protected\controllers\RoosterController.php(78): CController->render('create', Array)
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): RoosterController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('rooster/create')
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\GallosTrack1\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/gallostrack1/index.php?r=rooster/create
+HTTP_REFERER=http://localhost/gallostrack1/index.php?r=rooster/admin
+---
+2015/01/05 03:50:38 [error] [exception.CException] exception 'CException' with message 'Rooster y sus behaviors no tienen un método o closure llamado "getTypeOptions".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getTypeOptions', Array)
+#1 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\_form.php(95): CActiveRecord->__call('getTypeOptions', Array)
+#2 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\_form.php(95): Rooster->getTypeOptions()
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#6 D:\xampp\htdocs\GallosTrack1\protected\views\rooster\create.php(15): CController->renderPartial('_form', Array)
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#8 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\xampp\htdocs\GallosTrack1\protected\controllers\RoosterController.php(78): CController->render('create', Array)
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): RoosterController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('rooster/create')
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\GallosTrack1\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/gallostrack1/index.php?r=rooster/create
+HTTP_REFERER=http://localhost/gallostrack1/index.php?r=rooster/admin
+---

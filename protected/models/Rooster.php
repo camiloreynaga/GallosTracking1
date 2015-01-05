@@ -25,7 +25,7 @@
  * @property Type $type
  * @property Galpon $galpon
  */
-class Rooster extends CActiveRecord
+class Rooster extends Erp_startedActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -142,4 +142,23 @@ class Rooster extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        
+        ///Obtiene las galpones disponibles
+        public function getGalponOptions()
+        {
+            $criteria = new CDbCriteria();
+		$criteria->order='galpon';
+                $criteria->condition='active=0';
+		return Galpon::model()->findAll($criteria);
+        }
+        
+        ///Obtiene las types disponibles
+        public function getTypesOptions()
+        {
+            $criteria = new CDbCriteria();
+		$criteria->order='type';
+                $criteria->condition='active=0';
+		return Type::model()->findAll($criteria);
+        }
 }

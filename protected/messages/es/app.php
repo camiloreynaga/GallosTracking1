@@ -116,5 +116,17 @@ return array(
     
     //presentaciones
     'Presentacion'=>'Presentación',
+    
+    'Type'=>'Tipo',
+    'Types'=>'Tipos',
+    'Rooster'=>'Gallo',
+    'Roosters'=>'Gallos',
+    'Sex'=>'Sexo',
+    'Name'=>'Nombre',
+    'Mother'=>'Madre',
+    'Father'=>'Padre',
+    'Active'=>'Activo',
+    'Observation'=>'Observación',
+    'Register Rooster'=>'Registrar Gallos',
 );
 ?>

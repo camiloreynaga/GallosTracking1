@@ -15,7 +15,7 @@
  * The followings are the available model relations:
  * @property Rooster[] $roosters
  */
-class Type extends CActiveRecord
+class Type extends Erp_startedActiveRecord
 {
 	/**
 	 * @return string the associated database table name

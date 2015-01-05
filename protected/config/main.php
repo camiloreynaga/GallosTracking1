@@ -11,7 +11,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Gallos',
         'language'=>'es',
-
+        'theme'=>'gallo',
 	// preloading 'log' component
 	'preload'=>array('log','booster'),
 
