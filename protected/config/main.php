@@ -62,8 +62,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=gallos_track',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'adonde',
+			'username' => 'gallo',//'root',//
+			'password' => 'gallo123','adonde',//gallo123
 			'charset' => 'utf8',
 		),
                 'coreMessage'=>array(

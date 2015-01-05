@@ -128,5 +128,8 @@ return array(
     'Active'=>'Activo',
     'Observation'=>'Observación',
     'Register Rooster'=>'Registrar Gallos',
+    'Nro File'=>'Nro Ficha',
+    'Nro Plate'=>'Nro Placa',
+    
 );
 ?>
